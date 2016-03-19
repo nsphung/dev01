@@ -129,7 +129,7 @@ ENTRYPOINT zookeeper-server-start -daemon /etc/kafka/zookeeper.properties && \
 # https://github.com/tiangolo/babun-docker/wiki/Docker-Volumes-with-Babun
 
 # build & test image on Windows
-# docker build -t nsphung/dev . & docker run -it -p 8123:8123 -p 9200:9200 -p 9300:9300 -v /cygdrive/d/git:/root/git -v /cygdrive/c/Users/Nicolas/.ivy2:/root/.ivy2 -v /cygdrive/d/data/elasticsearch:/data/elasticsearch nsphung/dev
+# docker build -t nsphung/dev01 . & docker run -it -p 8123:8123 -p 9200:9200 -p 9300:9300 -v /cygdrive/d/git:/root/git -v /cygdrive/c/Users/Nicolas/.ivy2:/root/.ivy2 -v /cygdrive/d/data/elasticsearch:/data/elasticsearch nsphung/dev01
 
 # open shell in existing container via cmd
 # docker exec -it d831c143ecc7 /bin/zsh
