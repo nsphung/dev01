@@ -91,7 +91,7 @@ RUN set -ex \
 		chown -R elasticsearch:elasticsearch "$path"; \
 	done
 #COPY config ./config
-VOLUME /data/elasticsearch
+#VOLUME /data/elasticsearch
 RUN plugin -install mobz/elasticsearch-head/1.x
 RUN plugin -install lukas-vlcek/bigdesk/2.5.0
 RUN mkdir -p /data/elasticsearch && \
