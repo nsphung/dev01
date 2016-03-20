@@ -12,7 +12,7 @@ A fat developer image that contains everything to start on :
 * Ubuntu 15.10
 * Confluent 2.0.1 (with Zookeeper)
 * Kafka 0.9.0.1
-* Spark 1.6.0
+* Spark 1.5.2
 * ElasticSearch 1.7.5
 * SBT 0.13.11
 * Activator 1.3.7
