@@ -98,6 +98,8 @@ RUN mkdir -p /data/elasticsearch && \
 RUN echo 'path.data: /data/elasticsearch' >> /etc/elasticsearch/elasticsearch.yml
 
 # CLEAN APT
+RUN apt-get autoclean
+RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
 # Schema Registry port
@@ -139,4 +141,4 @@ ENTRYPOINT zookeeper-server-start -daemon /etc/kafka/zookeeper.properties && \
 
 # Tracker ip on docker-machine http://192.168.99.100:8123/swagger#!/hit/hit
 
-# TODO install ES volume https://hub.docker.com/_/elasticsearch/
+# TODO : https://www.elastic.co/downloads/marvel
