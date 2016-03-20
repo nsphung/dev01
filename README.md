@@ -27,12 +27,12 @@ https://github.com/tiangolo/babun-docker/wiki/Docker-Volumes-with-Babun
 
 Launch the container
 ===========
-For windows with volume use launch the container like this :
+For windows with volume, launch the container like this :
 
 `docker run -it -p 8123:8123 -p 9200:9200 -p 9300:9300 -v /cygdrive/d/git:/root/git -v /cygdrive/c/Users/Nicolas/.ivy2:/root/.ivy2 -v /cygdrive/d/data/elasticsearch:/data/elasticsearch nsphung/dev01`
 
 * /root/.ivy2 cache directory volume to avoid downloading dependencies each time
 * /root/git is the workdir on your host where it contains your root code projects directory for example
-* /data/elasticsearch is the volume if you want your ES data to be persistent across your container
+* /data/elasticsearch is the volume if you want your ES data to be persistent across containers
 
-And enjoy the zsh with everything you need to start to develop from this container.
+And enjoy the zsh with everything you need to start to develop.
