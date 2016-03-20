@@ -1,5 +1,9 @@
 # FAT Dev container useful for windows :)
 
+Just pull the image on the [Docker hub](https://hub.docker.com/r/nsphung/dev01/)
+
+  `docker pull nsphung/dev01`
+
 [![](https://badge.imagelayers.io/nsphung/dev01:latest.svg)](https://imagelayers.io/?images=nsphung/dev01:latest 'Get your own badge on imagelayers.io')
 
 This image is fat but very useful if you want to develop on Windows not in a VM :)
