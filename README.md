@@ -13,6 +13,9 @@ A fat developer image that contains everything to start on :
 * SBT 0.13.11
 * Activator 1.3.7
 * Zsh
+* Git
+* curl / wget
+* Java 8
 
 Mount volume on windows + docker-machine
 ===========
