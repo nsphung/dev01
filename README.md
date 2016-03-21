@@ -11,7 +11,7 @@ This image is fat but very useful if you want to develop on Windows not in a VM 
 A fat developer image that contains everything to start on :
 * Ubuntu 15.10
 * Confluent 2.0.1 (with Zookeeper)
-* Kafka 0.9.0.1
+* Kafka 0.9.0.1 (with Kafka 0.8.2.2 compatibility support)
 * Spark 1.5.2
 * ElasticSearch 1.7.5
 * SBT 0.13.11
