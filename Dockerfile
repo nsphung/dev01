@@ -66,6 +66,9 @@ RUN apt-get update && apt-get install -y confluent-platform-2.11.7
 
 #RUN echo "advertised.host.name=172.17.0.2" >> /etc/kafka/server.properties
 #RUN echo "advertised.port=9092" >> /etc/kafka/server.properties
+# Add kafka 0.8.2.2 compatibility for now
+RUN echo "# Update to Kafka 0.9.0.0 (if not all clients are not switch to 0.9.0.0 yet)" >> /etc/kafka/server.properties
+RUN echo "inter.broker.protocol.version=0.8.2.2" >> /etc/kafka/server.properties
 
 # Install ES
 # https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-repositories.html
