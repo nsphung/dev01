@@ -38,7 +38,7 @@ RUN sbt about
 RUN rm -fr sbt-${SBT_VERSION}.deb
 
 # Install Lightbend Play Activator
-ENV ACTIVATOR_VERSION=1.3.7
+ENV ACTIVATOR_VERSION=1.3.10
 RUN cd /opt && \
   wget https://downloads.typesafe.com/typesafe-activator/${ACTIVATOR_VERSION}/typesafe-activator-${ACTIVATOR_VERSION}.zip && \
   unzip typesafe-activator-${ACTIVATOR_VERSION}.zip && \
@@ -47,7 +47,7 @@ RUN cd /opt && \
 ENV PATH $PATH:/opt/activator
 
 # Install Spark
-ENV SPARK_VERSION=1.5.2
+ENV SPARK_VERSION=1.6.1
 RUN curl -s http://d3kbcqa49mib13.cloudfront.net/spark-${SPARK_VERSION}-bin-hadoop2.6.tgz | tar -xz -C /usr/local/
 RUN cd /usr/local && ln -s spark-${SPARK_VERSION}-bin-hadoop2.6 spark
 ENV SPARK_HOME /usr/local/spark
